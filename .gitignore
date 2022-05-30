@@ -1,0 +1,9 @@
+# ignore files
+main.spec
+build.py
+
+# ignore directories
+.idea/
+__pycache__/
+build/
+dist/
