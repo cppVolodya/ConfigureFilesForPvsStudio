@@ -33,3 +33,26 @@ class TextManipulator:
             for file in matching_files:
                 filepath = os.path.join(root_path, file)
                 self.AddTextToFile(filepath)
+
+    def RemoveTextFromFile(self, filepath):
+        with open(filepath, "r") as f:
+            content = f.read()
+
+        if self.m_text not in content:
+            print(DEFAULT_TEXT_NOT_PRESENT + filepath)
+        else:
+            content = content.replace(self.m_text, "")
+            with open(filepath, "w") as f:
+                f.write(content)
+            print(DEFAULT_TEXT_REMOVED + filepath)
+
+    def RemoveTextFromFilesInDirectory(self, directory):
+        for root_path, _, files in os.walk(directory):
+            matching_files = [file for file in files if TextManipulator.IsMatchingFile(file, self.m_extensions)]
+            if not matching_files:
+                print(DEFAULT_NO_FILES_WITH_EXTENSIONS_ERROR_MESSAGE + root_path)
+                continue
+
+            for file in matching_files:
+                filepath = os.path.join(root_path, file)
+                self.RemoveTextFromFile(filepath)
