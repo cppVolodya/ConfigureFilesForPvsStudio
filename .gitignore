@@ -1,6 +1,5 @@
 # ignore files
 main.spec
-build.py
 
 # ignore directories
 .idea/
