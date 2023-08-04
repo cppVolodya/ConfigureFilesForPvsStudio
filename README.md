@@ -20,15 +20,15 @@
 
 - Using the -add option:
 
-https://github.com/cppVolodya/tasks/assets/103601559/3a3651f3-a96d-4f5b-9443-249955a6287f
+https://github.com/cppVolodya/ConfigureFilesForPvsStudio/assets/103601559/0a0119d8-e558-404b-b47c-41c918ed9049
 
 - Using the -delete option:
 
-https://github.com/cppVolodya/tasks/assets/103601559/b45fb47d-2449-4876-9d3c-16ef691a4d05
+https://github.com/cppVolodya/ConfigureFilesForPvsStudio/assets/103601559/b22018fb-1e03-4ba8-a1c8-d7c9b931ff98
 
 - Using the -extension option:
 
-https://github.com/cppVolodya/tasks/assets/103601559/0f76012c-537f-417a-9fdc-bdb447c683bc
+https://github.com/cppVolodya/ConfigureFilesForPvsStudio/assets/103601559/7f3469a2-f2aa-436d-bdac-4e50f575ac4b
 
 ## Run Locally
 
